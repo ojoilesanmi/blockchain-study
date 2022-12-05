@@ -14,3 +14,5 @@ Contains math and computer science concepts I study in blockchain niche.
 
 
 ## Videos
+
+
