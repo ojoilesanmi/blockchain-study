@@ -7,5 +7,13 @@ Clearly, from n > 3, no integer a, b, or c, verifies the sum:
 a^n + b^n = c^n
 ```
 
+## Ciphers
+A cipher is a system that is used to transform plain test into cipher text or cryptogram.
+
+Message -> Cipher -> cryptogram
+
+Encryption is the operation of transforming a plaintext `m` into cryptogram `c` using a function `f`.
+Decryption is the opposite of the Encryption operation.
+
 ### Caesar Cipher
 Shifting three places to encrypt, returning three places to decrypt.
