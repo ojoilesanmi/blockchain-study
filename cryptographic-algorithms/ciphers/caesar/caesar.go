@@ -1,6 +1,9 @@
 package main
 
-import "bytes"
+import (
+	"bytes"
+	"fmt"
+)
 
 type CaesarCipherInterface interface {
 	Encrypt(input string, rotKey int) string
@@ -42,7 +45,6 @@ func getCharacterPosition(asciiValue int32) int {
 }
 
 func (c *CaesarCipher) Encrypt(input string, rotKey int) string {
-	//TODO implement me
 	var cipherText bytes.Buffer
 	for _, character := range input {
 		if character == 32 {
@@ -57,7 +59,6 @@ func (c *CaesarCipher) Encrypt(input string, rotKey int) string {
 }
 
 func (c *CaesarCipher) Decrypt(input string, rotKey int) string {
-	//TODO implement me
 	var cipherText bytes.Buffer
 
 	for _, character := range input {
@@ -77,26 +78,26 @@ func (c *CaesarCipher) Decrypt(input string, rotKey int) string {
 }
 
 func (c *CaesarCipher) Crack(input string) string {
-	//TODO implement me
-	panic("implement me")
+	var characterFrequency = []float32{.0820, .0150, .0280, .0430, .1270, .0220, .0200, .0610, .0700, .0015, .0080, .0400, .0240,
+		.0670, .0750, .0190, .0010, .0600, .0630, .0910, .0280, .0010, .0240, .0015, .0200, .0007,
+	}
+	var characterSums [26]float32
+
+	for _, character := range input {
+		if character == 32 {
+			continue
+		}
+		var characterPosition = getCharacterPosition(character)
+		characterSums[characterPosition-1] += characterFrequency[characterPosition-1]
+	}
+	return "not implemented..."
 }
 
 func newCaesarCipher() CaesarCipherInterface {
 	return &CaesarCipher{}
 }
 
-// ANOTHER IMPL
-//func cipher(input string, key int) string {
-//	rotKey, alphabetSize := rune(3), rune(26)
-//
-//	runes := []rune(input)
-//
-//	for index, char := range runes {
-//		switch key {
-//		case -1:
-//			if char >= 'a'+rotKey && char <= 'z' || char >= 'A'+rotKey && char <= 'Z' {
-//				char = char - rotKey
-//			}
-//		}
-//	}
-//}
+func main() {
+	test1 := newCaesarCipher().Encrypt("Apple", 3)
+	fmt.Printf("The encrypted form of the word 'Apple' using Rotation Key 3 is: %s", test1)
+}

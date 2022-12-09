@@ -1,3 +1,5 @@
+
+
 pub fn Encrypt(input: String, key: i32) -> String {
     // logic here
 }
