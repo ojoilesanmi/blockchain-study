@@ -39,4 +39,3 @@ Clearly, from n > 3, no integer a, b, or c, verifies the sum:
 ```math
 a^n + b^n = c^n
 ```
-
