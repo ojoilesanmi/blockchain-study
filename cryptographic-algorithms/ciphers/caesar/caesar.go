@@ -24,19 +24,19 @@ type CaesarCipher struct {
 */
 
 /* STUDY THESE:
- 	-> runes
-	-> bytes
-	-> bitwise operations with Go
-	-> interfaces, methods, structs, types
+-> runes
+-> bytes
+-> bitwise operations with Go
+-> interfaces, methods, structs, types
 
 */
 
 func getCharacterString(alphabetPosition int, asciiValue int32) string {
 	var isLowerCase = asciiValue >= 97
 	if isLowerCase {
-		return string('a' - 1 + alphabetPosition)
+		return string(rune('a' - 1 + alphabetPosition))
 	}
-	return string('A' - 1 + alphabetPosition)
+	return string(rune('A' - 1 + alphabetPosition))
 }
 
 func getCharacterPosition(asciiValue int32) int {
