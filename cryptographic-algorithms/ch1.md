@@ -27,6 +27,14 @@ is done in Go and Rust.
 In number theory, no three positive integers a, b, and c satisfy the equation `a^n + b^n = c^n`
 for any integer value of n greater than 2. The cases n = 1 and n = 2 have infinitely many solutions.
 
+If `p` is a prime number, then for any integer `(a)` elevated to the prime
+number `(p)`, we find `(a)` as the result of the following equation:
+```math
+a^p = a (mod p)
+```
+For example:
+If `a = 2` and `p = 3`, then `2^3 = 2 (mod 3)`.
+
 Clearly, from n > 3, no integer a, b, or c, verifies the sum:
 ```math
 a^n + b^n = c^n
