@@ -57,9 +57,9 @@ Examples of Signature schemes include:
 - RSA
 - Elliptic curve signatures.
 
-You can generate signature schemes from hashes. This is called "Lamport Signatures"
+You can generate signature schemes from hashes. This is called "Lamport Signatures." Hash functions are quantum resistant, kind of like black magic.
 
 # TO DO EXERCISES
 * [ ] Implement Signature in Go and Rust
 * [ ] Implement Hashing in Go and Rust
-* [ ] Pset: Implement a signature system using only hashes.
+* [ ] Pset: Implement a signature system using only hashes. Use SHA256 hashing function from std lib.
