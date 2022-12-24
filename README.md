@@ -6,7 +6,7 @@ Contains math and computer science concepts I study in blockchain niche.
 ## To Do
 * [x] Start Chapter 1: Deep Diving into Cryptography
 * [x] Implement Caesar cipher in Go
-* [ ] Implement Caesar Cipher in Rust
+* [x] Implement Caesar Cipher in Rust
 * [ ] Implement Vignere cipher in Go
 * [ ] Implement Vignere cipher in Rust
 * [ ] Summarize Chapter 1
