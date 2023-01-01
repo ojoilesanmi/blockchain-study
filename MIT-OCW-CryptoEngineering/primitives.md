@@ -1,7 +1,8 @@
 # Hash Functions
 Any size input, fixed size output, and the output is "random" looking.
-You can do everything with just hash functions. Signatures, encryptiong, etc.
+You can do everything with just hash functions. Signatures, encrypting, etc.
 You have a data, run it to a hash function, and get an output.
+
 ```math
 hash(data) -> output
 ```
