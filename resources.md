@@ -18,7 +18,7 @@ I have heard good things about this series of lectures and suspect it to be simi
 1. (Just for fun) [The Woman Who Smashed Codes](https://www.amazon.com/dp/B01M0EOI6I) by Fagone is a *fascinating* biography of Elizebeth Smith Friedman. In many ways she was the creator of modern code-breaking in the US and did much unsung work to protect the allies during both world wars.
 
 ### Activities
-
+1. [Cryptography in Rust for Hackers](https://cryptographyinrustforhackers.com/).
 1. [Cryptopals Crypto Challenges](https://cryptopals.com/)
 Here is the first "hands-on" resource. It takes you through building and breaking many standard cryptographic algorithms.
 It starts easy and gets *really hard* at the end. Even if you cannot complete it, you should go as far as you can and keep chipping away at it as you get better.
@@ -34,7 +34,6 @@ While neither of these are big distractions, I'm personally not a fan of Python 
 1. Read *tons* of specifications. You use AES-GCM? Read [NIST SP 800-38D](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-38d.pdf) You use HMAC? Read [RFC #2104](https://tools.ietf.org/html/rfc2104)
 1. Read [The Stick-Figure Guide to AES](http://www.moserware.com/2009/09/stick-figure-guide-to-advanced.html)
 1. Read the [Latacora Blog](https://latacora.singles/) (especially the "Right Answers")
-1. Read my [Cryptographic Gotchas](./index.md) list.
 1. Read [If You’re Typing the Letters A-E-S Into Your Code You’re Doing It Wrong](https://www.e-x-a.org/stuff/articles/typing-a-e-s/) by Thomas Ptacek
 
 ### Miscellaneous
