@@ -28,7 +28,8 @@ hash(x) == hash(z)
 ```
 You can find them eventually, but not before `2^256`.
 
-Collision Resistance have been broken for popular algorithms like `SHA-1`,  and `MD5`, but the Preimage Resistance property still remains intact.
+Collision Resistance have been broken for popular algorithms like `SHA-1`,  and `MD5`,
+but the Preimage Resistance property still remains intact.
 
 ## Uses of Hash functions
 1. Naming files (where immutability is important)
