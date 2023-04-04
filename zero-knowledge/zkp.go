@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	math "github.com/ethereum/go-ethereum/common/math"
-	crypto "github.com/ethereum/go-ethereum/crypto"
+	math "github.com/ethereum/go-ethereum/common/math" // https://pkg.go.dev/github.com/ethereum/go-ethereum/crypto
+	crypto "github.com/ethereum/go-ethereum/crypto"    // https://pkg.go.dev/github.com/ethereum/go-ethereum/common/math
 	"math/big"
 )
 
@@ -30,8 +30,8 @@ func verifyZKProof(secretNumber *big.Int, concatHash, solution *big.Int) bool {
 }
 
 func main() {
-	// Assuming our secretNumber is 42.
-	secretNumber := big.NewInt(42)
+	// Assuming our secretNumber is 100.
+	secretNumber := big.NewInt(100)
 	// generate a proof of knowledge.
 	testConcatHash, testSecretNumber := generateZKProof(secretNumber)
 	// verify the proof of knowledge.
