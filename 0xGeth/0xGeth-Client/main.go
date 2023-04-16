@@ -4,7 +4,8 @@ import (
 	"context"
 	"fmt"
 	"log"
-	
+	"math/big"
+
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/ethclient"
 )
@@ -36,4 +37,9 @@ func main() {
 		log.Fatalf("Error getting the balance: %v", err)
 	}
 	fmt.Println("The balance is: ", balance)
+
+	// convert the balance to correct Ether units
+	correctBalance := new(big.Float)
+	correctBalance.SetString(balance.String())
+	fmt.Println("The correct balance is: ", correctBalance)
 }
