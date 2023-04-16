@@ -42,4 +42,6 @@ func main() {
 	correctBalance := new(big.Float)
 	correctBalance.SetString(balance.String())
 	fmt.Println("The correct balance is: ", correctBalance)
+
+	// express balance in ether
 }
